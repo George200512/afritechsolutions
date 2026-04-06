@@ -1,0 +1,13 @@
+
+@font-face{
+    src: url("../fonts/Poppins-Bold.ttf")
+    format("truetype");
+    font-family: "Poppins"
+}
+
+
+@font-face{
+    src: url("../fonts/Ubuntu-Regular.ttf")
+    format("truetype");
+    font-family: "Ubuntu";
+}
