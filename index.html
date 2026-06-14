@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Give your bunisses a website that builds trust, attracts clients and reflects your bunisses brand.">
     <meta name="author" description="George Ofori">
     <meta name="author" description="https://george-ofori.vercel.app">
@@ -13,11 +14,14 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png"> 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"> 
     <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
-    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/jquery-3.7.1.min.js"></script>
     <script src="scripts/vue.global.prod.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="components/index.js"></script>
+    <script src="scripts/main.js" defer></script>
+    <!--<script src="scripts/index.js" defer></script>-->
     <link rel="stylesheet" href="styles/bootstrap-icons.css"/>
-    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="styles/base.css"/>
+    <!--<link rel="stylesheet" href="styles/style.css"/>-->
     <title>AfriTechSolutions</title>
 </head>
 <body>
@@ -58,7 +62,7 @@
                 <div class="div-2">
                   <h2>What We Offer</h2>
                   <div class="offers-cont">
-                      <GenericComponent type="offer" title="Frontend Web development" description=""><div class="icon"><span class="bi bi-arrow-repeat"></span></div></GenericComponent>
+                      <GenericComponent type="offer" title="Frontend Web development" description="Modern, responsive websites tailored to your business needs."><div class="icon"><span class="bi bi-globe"></span></div></GenericComponent>
                   </div>  
                 </div>
             </section>
