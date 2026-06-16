@@ -1,18 +1,11 @@
 window.GenericComponent = {
 	props: ["type", "title", "description"],
-	data(){
-		return {
-			type,
-			title,
-			description
-		}
-	},
 	template: `
-		<div class={{type+"-container"}}>
-		<h2>
+		<div :class='type+"-container"'>
+		<div class="heading">
 		<slot></slot>
 		<p class="ttl">{{title}}</p>
-		</h2>
+		</div>
 
 		<div class="descr">{{description}}</div>
 		</div>
@@ -21,14 +14,6 @@ window.GenericComponent = {
 
 window.ProjectCard = {
 	props: ["href", "name", "description", "skills_involved"],
-	data() {
-		return {
-			href,
-			name,
-			description,
-			skills_involved
-		}
-	},
 	template: `
 		<div class="project-container">
 		<a :href="href" class="site-name"><h3 v-text="name"></h3></a>
@@ -37,7 +22,7 @@ window.ProjectCard = {
 		<p class="skills-label">Skills Used: </p>
 		
 		<ul class="skills">
-		<li class="skill" v-for="for skl in skills_involved" :key="skl" v-text="skl"></li>
+		<li class="skill" v-for="skl in skills_involved" :key="skl" v-text="skl"></li>
 		</ul>
 		</div>
 		</div>
