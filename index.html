@@ -17,7 +17,7 @@
     <script src="scripts/jquery-3.7.1.min.js"></script>
     <script src="scripts/vue.global.prod.js"></script>
     <script src="components/index.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js" defer></script>
     <!--<script src="scripts/index.js" defer></script>-->
     <link rel="stylesheet" href="styles/bootstrap-icons.css"/>
     <link rel="stylesheet" href="styles/base.css"/>
@@ -70,6 +70,13 @@
                     <GenericComponent type="offer" title="Landing Page" description="
             High-converting single-page websites for products or services."><div class="icon"><span class="bi bi-file"></span></div></GenericComponent>
                   </div>  
+                </div>
+
+                <div class="div-3">
+                    <h2>Featured Products</h2>
+                    <div class="projects-container">
+                        <ProjectCard href='https://george-ofori.vercel.app' name='Street Python' description='A Ghanaian front end web developer that designs professional websites for companies.' skills_involved="HTML 5, CSS3, JAVASCRIPT" />
+                    </div>
                 </div>
             </section>
         </main>
