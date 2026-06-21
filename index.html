@@ -62,24 +62,69 @@
                 <div class="div-2">
                   <h2>What We Offer</h2>
                   <div class="offers-cont">
-                      <GenericComponent type="offer" title="Frontend Web development" description="Modern, responsive websites tailored to your business needs."><div class="icon"><span class="bi bi-globe"></span></div></GenericComponent>
+                      <generic-omponent type="offer" title="Frontend Web development" description="Modern, responsive websites tailored to your business needs."><div class="icon"><span class="bi bi-globe"></span></div></generic-component>
 
-                      <GenericComponent type="offer" title="Website Redesign" description="
-            Improve outdated websites with a fresh, professional look."><div class="icon"><span class="bi bi-arrow-repeat"></span></div></GenericComponent>
+                      <generic-component type="offer" title="Website Redesign" description="
+            Improve outdated websites with a fresh, professional look."><div class="icon"><span class="bi bi-arrow-repeat"></span></div></Generic-component>
 
-                    <GenericComponent type="offer" title="Landing Page" description="
-            High-converting single-page websites for products or services."><div class="icon"><span class="bi bi-file"></span></div></GenericComponent>
+                    <generic-component type="offer" title="Landing Page" description="
+            High-converting single-page websites for products or services."><div class="icon"><span class="bi bi-file"></span></div></generic-component>
                   </div>  
                 </div>
 
                 <div class="div-3">
                     <h2>Featured Products</h2>
                     <div class="projects-container">
-                        <ProjectCard href='https://george-ofori.vercel.app' name='Street Python' description='A Ghanaian front end web developer that designs professional websites for companies.' skills_involved="HTML 5, CSS3, JAVASCRIPT" />
+                        <project-card href='https://george-ofori.vercel.app' name='Street Python' description='A Ghanaian front end web developer that designs professional websites for companies.' :skills_involved='["HTML 5", "CSS3", "JAVASCRIPT"]' />
+
+
+                        <project-card href='https://george200512.github.io/fixit-hub/' name='Fixit Hub' description='A local mobile phone repair & accessories shop that fixes smartphones, tablets, and sells quality accessories.' :skills_involved='["HTML 5", "CSS3", "JAVASCRIPT"]' />
                     </div>
+                    <a href="portfolio.html" class="more-btn">Show more <span class="bi bi-arrow-right"></a>
+                </div>
+
+                <div class="div-4">
+                    <h2>Why Choose Us</h2>
+                    <div class="reasons-cont">
+                        <generic-component type="reason" title="Fast Loading" description="Webites thats loads quickly on a secured connection."><div class="icon"><span class="bi bi-rocket-takeoff"></span></div></generic-component>
+
+
+                        <generic-component type="reason" title="Accessible" description="Highly accessible websites compatible with the visually impaired and hearing impaired."><div class="icon"><span class="bi bi-universal-access"></span></div></generic-component>
+
+
+                        <generic-component type="reason" title="SEO Optimized" description="Built with SEO rules in mind to help wesite rank higher."><div class="icon"><span class="bi bi-search"></span></div></generic-component>
+
+
+                        <generic-component type="reason" title="User Friendly" description="Easy to navigate pages users can familiarize themselves with easily."><div class="icon"><span class="bi bi-hand-thumbs-up"></span></div></generic-component>
+                    </div>
+                </div>
+
+                <div class="div-5">
+                    <h2 class="d5-h2">Let's Create The Next Big Thing Together.</h2>
+                    <p class="h5-p">Come and experience a great service for a low cost.</p>
+                    <a href="https://wa.me/+233504694485" class="h5-a">Chat Us On WhatsApp</a>
                 </div>
             </section>
         </main>
+
+        <footer>
+            <div class="footer">
+                <h3 class="ft-h3">Quick Links</h3>
+                <ul class="links">
+                    <li class="lk-li"><a href="index.html">Home</a></li>
+                    <li class="lk-li"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="lk-li"><a href="about.html">About</a></li>
+                    <li class="lk-li"><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <h3 class="ct-h3">Contact us via:</h3>
+                <div class="sm-links">
+                    <a href="https://www.facebook.com/profile.php?id=61571375817466" class="sm-link">
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
