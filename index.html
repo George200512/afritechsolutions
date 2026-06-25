@@ -18,10 +18,10 @@
     <script src="scripts/vue.global.prod.js"></script>
     <script src="components/index.js"></script>
     <script src="scripts/main.js" defer></script>
-    <!--<script src="scripts/index.js" defer></script>-->
+    <script src="scripts/index.js" defer></script>
     <link rel="stylesheet" href="styles/bootstrap-icons.css"/>
     <link rel="stylesheet" href="styles/base.css"/>
-    <!--<link rel="stylesheet" href="styles/style.css"/>-->
+    <link rel="stylesheet" href="styles/style.css"/>
     <title>AfriTechSolutions</title>
 </head>
 <body>
@@ -42,7 +42,7 @@
             <section>
                 <div class="div-1">
                     <div class="hero">
-                        <p class="shrt-description">Frontend Web Development</p>
+                        <div class="shrt-description">Frontend Web Development</div>
                         <h1>
                             <span class="lets">Let's</span> Make Your <br /><span class="presence">Presence</span> Felt <span class="online">Online.</span>
                         </h1>
@@ -75,10 +75,10 @@
                 <div class="div-3">
                     <h2>Featured Products</h2>
                     <div class="projects-container">
-                        <project-card href='https://george-ofori.vercel.app' name='Street Python' description='A Ghanaian front end web developer that designs professional websites for companies.' :skills_involved='["HTML 5", "CSS3", "JAVASCRIPT"]' />
+                        <project-card href='https://george-ofori.vercel.app' name='Street Python' description='A Ghanaian front end web developer that designs professional websites for companies.' :skills_involved='["HTML 5", "CSS3", "JAVASCRIPT"]'></project-card>
 
 
-                        <project-card href='https://george200512.github.io/fixit-hub/' name='Fixit Hub' description='A local mobile phone repair & accessories shop that fixes smartphones, tablets, and sells quality accessories.' :skills_involved='["HTML 5", "CSS3", "JAVASCRIPT"]' />
+                        <project-card href='https://george200512.github.io/fixit-hub/' name='Fixit Hub' description='A local mobile phone repair & accessories shop that fixes smartphones, tablets, and sells quality accessories.' :skills_involved='["HTML 5", "CSS3", "JAVASCRIPT"]'></project-card>
                     </div>
                     <a href="portfolio.html" class="more-btn">Show more <span class="bi bi-arrow-right"></a>
                 </div>
@@ -121,8 +121,13 @@
             <div class="contact">
                 <h3 class="ct-h3">Contact us via:</h3>
                 <div class="sm-links">
-                    <a href="https://www.facebook.com/profile.php?id=61571375817466" class="sm-link">
+                    <a href="https://www.facebook.com/profile.php?id=61571375817466" class="sm-link"><span class="bi bi-facebook"></span></a>
+
+                    <a href="mailto:georgeofori2005@gmail.com" class="sm-link"><span class="bi bi-envelope"></span></a>
+
+                    <a href="https://www.linkedin.com/in/george-ofori-3973773a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="sm-link"><span class="bi bi-linkedin"></span></a>
                 </div>
+                <span class="copyright">&copy; 2026</span>
             </div>
         </footer>
     </div>

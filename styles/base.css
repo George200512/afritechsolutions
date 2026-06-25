@@ -2,7 +2,7 @@
 @font-face{
     src: url("../fonts/Poppins-Bold.ttf")
     format("truetype");
-    font-family: "Poppins"
+    font-family: "Poppins";
 }
 
 
@@ -10,4 +10,28 @@
     src: url("../fonts/Ubuntu-Regular.ttf")
     format("truetype");
     font-family: "Ubuntu";
+}
+
+:root{
+    --primary-color: rgba(244, 180, 0, 0.6);
+    --secondary-color: rgba(27, 94, 32, 0.6);
+    --accent-color: rgba(183, 28, 28, 0.6);
+    --shadow-primary: rgba(26, 26, 26, 0.15);
+    --shadow-secondary: rgba(255, 248, 225, 0.1);
+    --base-font: Ubuntu;
+    --primary-font: Poppins;
+    --line-height: 1.7;
+    --border-radius: 1.5rem;
+    --transition-duration: 0.4s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--base-font);
+    line-height: var(--line-height);
 }

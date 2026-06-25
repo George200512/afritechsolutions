@@ -1,0 +1,22 @@
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: var(--primary-color);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	padding: 1.050rem 1rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.8rem;
+}
+
+.menu{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	column-gap: 0.9rem;
+	align-items: center;
+	justify-content: center;
+}
