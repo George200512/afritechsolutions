@@ -6,17 +6,82 @@ header{
 	background: var(--primary-color);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-	padding: 1.050rem 1rem;
+	padding: .08rem 1rem;
 	display: flex;
 	flex-direction: column;
-	row-gap: 0.8rem;
+	gap: 0.8rem;
+	width: 100%;
+	align-self: center;
 }
 
 .menu{
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
-	column-gap: 0.9rem;
+	column-gap: 0.7rem;
 	align-items: center;
 	justify-content: center;
+	align-self: center;
+	
+}
+
+
+.m-item a:link, .m-item a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+.m-item a::after{
+	transition: opacity var(--transition-duration) linear;
+	content: '';
+	display: block;
+	background: var(--accent-color);
+	width: 5rem;
+	height: 0.2rem;
+	border-radius: var(--border-radius);
+	margin: 0 auto;
+	opacity: 0;
+}
+
+.m-item a:hover::after, .m-item a:active::after
+{
+	opacity: 1;
+}
+
+.div-1{
+	background: url("../images/file_00000000e33c71f48779558c2f0b1c7c.png");
+	padding: 1.3rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main{
+	margin-top: 3.5rem;
+}
+
+.hero{
+	background: rgba(255, 255, 255, 0.2);
+	padding: 3rem;
+	border-radius: var(--border-radius);
+	border: 0.01rem solid white;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 1rem;
+	width: 100%;
+	box-shadow: 0.7rem 0.8rem 0.7rem rgba(255, 255, 255, 0.15);
+}
+
+.shrt-description{
+	background: rgba(244, 180, 0, 0.15);
+	color: rgba(244, 180, 0, 1.0);
+	border-radius: var(--border-radius);
+	border: 0.01rem solid rgba(244, 180, 0, 1);
+	padding: 0.6rem;
+	align-self: center;
+	font-weight: boldd;
 }
