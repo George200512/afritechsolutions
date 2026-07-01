@@ -2,10 +2,10 @@ window.GenericComponent = {
 	props: ["type", "title", "description"],
 	template: `
 		<div :class='type+"-container"'>
-		<div class="heading">
+		<h3 class="heading">
 		<slot></slot>
 		<p class="ttl">{{title}}</p>
-		</div>
+		</h3>
 
 		<div class="descr">{{description}}</div>
 		</div>
